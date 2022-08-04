@@ -8,6 +8,7 @@ export class Playlist extends React.Component {
   }
 
   handleNameChange(e) {
+    console.log(e);
     this.props.onNameChange(e.target.value);
   }
   render() {

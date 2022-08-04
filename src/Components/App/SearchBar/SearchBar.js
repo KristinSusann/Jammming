@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react";
 import "./SearchBar.css";
 
 export class SearchBar extends React.Component {
@@ -12,6 +11,7 @@ export class SearchBar extends React.Component {
     this.handleTermChange = this.handleTermChange.bind(this);
   }
   search() {
+    console.log("onSearch :" + this.state.term + this.props.onSearch);
     this.props.onSearch(this.state.term);
   }
 
